@@ -1,0 +1,17 @@
+<mat-card class="item-card">
+    <mat-card-title-group>
+        <mat-card-title>{{item.text}}</mat-card-title>
+    </mat-card-title-group>
+    <mat-card-content class = "card-content">
+        <img class="card-image" mat-card-lg-image src={{item.image}}>
+        <mat-icon>remove_red_eye</mat-icon>
+    </mat-card-content>
+    <mat-card-footer class = "card-buttons">
+        <div class="example-button-row">
+            <button mat-raised-button color="primary">Link</button>
+        </div>
+        <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+    </mat-card-footer>
+</mat-card>
