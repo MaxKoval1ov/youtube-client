@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
+import { ResultItem } from '../models/item.model';
 
-type ResultItem = {
-  text: string;
-  image: string;
-};
+
+
 @Component({
   selector: 'app-search-item',
   templateUrl: './search-item.component.html',
@@ -11,5 +10,5 @@ type ResultItem = {
 })
 export class SearchItemComponent {
   @Input()
-    item!: ResultItem;
+    item!:ResultItem;
 }

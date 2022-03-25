@@ -4,9 +4,10 @@ import { SearchItemComponent } from './search-item/search-item.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { MaterialModuleModule } from '../material-module/material-module.module';
 import { SearchComponent } from './search/search.component';
+import { SortComponent } from './sort/sort.component';
 
 @NgModule({
-  declarations: [SearchItemComponent, SearchFormComponent, SearchComponent],
+  declarations: [SearchItemComponent, SearchFormComponent, SearchComponent, SortComponent],
   imports: [CommonModule, MaterialModuleModule],
   exports: [SearchComponent],
 })

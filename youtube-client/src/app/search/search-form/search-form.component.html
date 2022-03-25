@@ -1,13 +1,13 @@
 <form class="search-form">
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Assignee</mat-label>
-      <input type="text" matInput  [matAutocomplete]="auto">
-      <mat-autocomplete #auto="matAutocomplete">
-        <mat-option >
-          name1
-        </mat-option>
-      </mat-autocomplete>
-    </mat-form-field>
+    <mat-form-field >
+        <mat-label>Name</mat-label>
+        <input type="text" matInput  [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option >
+            name1
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
     <button mat-raised-button color="primary" class = "search-btn">Search</button>
   </form>
   <div class="search-opts">
