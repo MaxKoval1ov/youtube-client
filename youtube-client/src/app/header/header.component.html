@@ -1,3 +1,12 @@
-<header><img class="header-img" src="./assets/logo.png" alt="Smth is wrong">
-    <h1>NotYoutube</h1>
+<header>
+    <section class="title">
+        <img class="header-img" src="./assets/logo.png" alt="Smth is wrong">
+        <h1>NotYoutube</h1>
+    </section>
+    <ng-container *ngIf="isLogged; else logBtn">
+        <app-user></app-user>
+    </ng-container>
+    <ng-template #logBtn>
+        <button mat-stroked-button color="warn">Log</button>
+    </ng-template>
 </header>
