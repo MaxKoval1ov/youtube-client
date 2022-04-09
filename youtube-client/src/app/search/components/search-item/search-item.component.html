@@ -2,10 +2,12 @@
     <mat-card-title-group>
         <mat-card-title>{{item.text}}</mat-card-title>
     </mat-card-title-group>
-    <mat-card-content class = "card-content">
-        <img class="card-image" mat-card-lg-image src={{item.image}}>
-    </mat-card-content>
-    <mat-card-subtitle>
+    <mat-card-content class = "card-content" class="full-width">
+        <div class="row">
+            <div class="col">
+                <img class="card-image" mat-card-lg-image src={{item.image}}>
+            </div>
+        </div>
         <div class="card-stats">
             <span class = 'card-stat'>
                 <mat-icon>remove_red_eye</mat-icon>
@@ -20,11 +22,14 @@
                 {{item.dislikes}}
             </span>
             <span class = 'card-stat'>
-                <mat-icon>rcopy_all</mat-icon>
+                <mat-icon>comments</mat-icon>
                 {{item.comments}}
             </span>
             
         </div>
+    </mat-card-content>
+    <mat-card-subtitle>
+        Subs
     </mat-card-subtitle>
     <mat-card-footer class = "card-buttons">
         <div class="example-button-row">

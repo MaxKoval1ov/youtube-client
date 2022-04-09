@@ -1,0 +1,5 @@
+<app-search-form></app-search-form>
+<app-sort (OrderItemEvent)="changeOrder($event)"></app-sort>
+<div class = 'cards-container' >
+    <app-search-item  *ngFor="let item of items | orderBy: sortingBy:isDesc" [item] = "item"></app-search-item>
+</div>

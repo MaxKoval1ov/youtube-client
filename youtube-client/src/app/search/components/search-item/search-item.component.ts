@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ResultItem } from '../models/item.model';
+import { ResultItem } from '../../models/item.model';
 
 @Component({
   selector: 'app-search-item',
@@ -14,5 +14,6 @@ export class SearchItemComponent {
 
   toggleLike(): void {
     this.isLiked = !this.isLiked;
+    this.item.likes++;
   }
 }
